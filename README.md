@@ -27,10 +27,17 @@ pod install
 (For running on real device, you can go to XCODE to sign your provisioning )
 
 
-## INSTALLATION
-from <ROOT> Project:
+## Run app:
+from ROOT Project:
+1. Run the packager:
  ```
  yarn start
- yarn android
- yarn ios
 ```
+2. Run the app:
+```
+ yarn android
+ ```
+or
+```
+ yarn ios
+ ```
