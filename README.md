@@ -3,20 +3,33 @@
 This project create simple app use Webview support pull to refresh<br/>
 For simplicity I use Webview call this website https://picsum.photos/ because it will generate random image everytime we refresh the page 
 
+# Requirement
+```
+ Node version >= 12
+ ```
 
  ## Setup project:
  ```
  git clone https://github.com/hhqwerty/rn_webview_ptr.git
 
  yarn install
-
- cd ios
-
- pod install 
  ```
- Make sure SDK Enviroment is setup properly and run:
+### Android
+Define location with an ANDROID_SDK_ROOT environment variable or by setting the sdk.dir path in your project's local properties file at:
+```
+'<PATH_TO_YOUR_PROJECT>/android/local.properties'
+```
+### IOS
+```
+cd ios
+pod install 
+```
+(For running on real device, you can go to XCODE to sign your provisioning )
+
+
+## INSTALLATION
+from <ROOT> Project:
  ```
- cd ..
  yarn start
  yarn android
  yarn ios
